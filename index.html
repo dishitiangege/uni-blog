@@ -1,2 +1,71 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>恒创营</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=/static/index.5841170f.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=/static/js/chunk-vendors.8ea6bdaa.js></script><script src=/static/js/index.fd648b8f.js></script></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>欢迎页-恒哥欢迎你</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: TIME;
+            src: url("time.ttf") format("truetype");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .app {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform-origin: 0 0;
+        }
+
+        .time {
+            font-family: TIME;
+            margin: 1rem 0;
+        }
+
+        .date {
+            white-space: nowrap;
+        }
+
+        .cn-date {}
+    </style>
+    <script>
+        window.onload = function() {
+            timer = setInterval("f1()", 5000)
+        }
+        function f1() { 
+            window.location.href = "main.html"
+         }
+    </script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="date"></div>
+        <div class="time"></div>
+        <div class="cn-date"></div>
+    </div>
+
+    <script src="./calendar.min.js"></script>
+    <script src="./index.min.js"></script>
+</body>
+
+</html>
